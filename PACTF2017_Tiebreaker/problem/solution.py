@@ -40,13 +40,13 @@ def end_string(hash_number):
 
 # generate map of ending strings
 end_strings = {}
-for i in it.chain(xrange(32, 60), xrange(63, 4032)):
+for i in it.chain(xrange(32, 60), xrange(63, 4033)):
         end_strings[i] = end_string(i)
 #print "end_strings =",end_strings
         
 # generate map of hashes
 hashes = {}
-for i in it.chain(xrange(32, 60), xrange(63, 4032)):
+for i in it.chain(xrange(32, 60), xrange(63, 4033)):
         hash = hash_number(i)
         if hash in hashes:
                 hashes[hash].append(i)
