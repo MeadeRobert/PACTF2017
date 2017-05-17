@@ -1,0 +1,850 @@
+
+linux.507bddb2e443.out:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+0000000000400b88 <_init>:
+  400b88:	48 83 ec 08          	sub    rsp,0x8
+  400b8c:	48 8b 05 65 14 20 00 	mov    rax,QWORD PTR [rip+0x201465]        # 601ff8 <_DYNAMIC+0x1f0>
+  400b93:	48 85 c0             	test   rax,rax
+  400b96:	74 05                	je     400b9d <_init+0x15>
+  400b98:	e8 63 01 00 00       	call   400d00 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEpLEc@plt+0x10>
+  400b9d:	48 83 c4 08          	add    rsp,0x8
+  400ba1:	c3                   	ret    
+
+Disassembly of section .plt:
+
+0000000000400bb0 <puts@plt-0x10>:
+  400bb0:	ff 35 52 14 20 00    	push   QWORD PTR [rip+0x201452]        # 602008 <_GLOBAL_OFFSET_TABLE_+0x8>
+  400bb6:	ff 25 54 14 20 00    	jmp    QWORD PTR [rip+0x201454]        # 602010 <_GLOBAL_OFFSET_TABLE_+0x10>
+  400bbc:	0f 1f 40 00          	nop    DWORD PTR [rax+0x0]
+
+0000000000400bc0 <puts@plt>:
+  400bc0:	ff 25 52 14 20 00    	jmp    QWORD PTR [rip+0x201452]        # 602018 <_GLOBAL_OFFSET_TABLE_+0x18>
+  400bc6:	68 00 00 00 00       	push   0x0
+  400bcb:	e9 e0 ff ff ff       	jmp    400bb0 <_init+0x28>
+
+0000000000400bd0 <gettimeofday@plt>:
+  400bd0:	ff 25 4a 14 20 00    	jmp    QWORD PTR [rip+0x20144a]        # 602020 <_GLOBAL_OFFSET_TABLE_+0x20>
+  400bd6:	68 01 00 00 00       	push   0x1
+  400bdb:	e9 d0 ff ff ff       	jmp    400bb0 <_init+0x28>
+
+0000000000400be0 <__libc_start_main@plt>:
+  400be0:	ff 25 42 14 20 00    	jmp    QWORD PTR [rip+0x201442]        # 602028 <_GLOBAL_OFFSET_TABLE_+0x28>
+  400be6:	68 02 00 00 00       	push   0x2
+  400beb:	e9 c0 ff ff ff       	jmp    400bb0 <_init+0x28>
+
+0000000000400bf0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@plt>:
+  400bf0:	ff 25 3a 14 20 00    	jmp    QWORD PTR [rip+0x20143a]        # 602030 <_GLOBAL_OFFSET_TABLE_+0x30>
+  400bf6:	68 03 00 00 00       	push   0x3
+  400bfb:	e9 b0 ff ff ff       	jmp    400bb0 <_init+0x28>
+
+0000000000400c00 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6appendEmc@plt>:
+  400c00:	ff 25 32 14 20 00    	jmp    QWORD PTR [rip+0x201432]        # 602038 <_GLOBAL_OFFSET_TABLE_+0x38>
+  400c06:	68 04 00 00 00       	push   0x4
+  400c0b:	e9 a0 ff ff ff       	jmp    400bb0 <_init+0x28>
+
+0000000000400c10 <__stack_chk_fail@plt>:
+  400c10:	ff 25 2a 14 20 00    	jmp    QWORD PTR [rip+0x20142a]        # 602040 <_GLOBAL_OFFSET_TABLE_+0x40>
+  400c16:	68 05 00 00 00       	push   0x5
+  400c1b:	e9 90 ff ff ff       	jmp    400bb0 <_init+0x28>
+
+0000000000400c20 <_ZNSaIcED1Ev@plt>:
+  400c20:	ff 25 22 14 20 00    	jmp    QWORD PTR [rip+0x201422]        # 602048 <_GLOBAL_OFFSET_TABLE_+0x48>
+  400c26:	68 06 00 00 00       	push   0x6
+  400c2b:	e9 80 ff ff ff       	jmp    400bb0 <_init+0x28>
+
+0000000000400c30 <_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7compareEPKc@plt>:
+  400c30:	ff 25 1a 14 20 00    	jmp    QWORD PTR [rip+0x20141a]        # 602050 <_GLOBAL_OFFSET_TABLE_+0x50>
+  400c36:	68 07 00 00 00       	push   0x7
+  400c3b:	e9 70 ff ff ff       	jmp    400bb0 <_init+0x28>
+
+0000000000400c40 <_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4sizeEv@plt>:
+  400c40:	ff 25 12 14 20 00    	jmp    QWORD PTR [rip+0x201412]        # 602058 <_GLOBAL_OFFSET_TABLE_+0x58>
+  400c46:	68 08 00 00 00       	push   0x8
+  400c4b:	e9 60 ff ff ff       	jmp    400bb0 <_init+0x28>
+
+0000000000400c50 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEaSERKS4_@plt>:
+  400c50:	ff 25 0a 14 20 00    	jmp    QWORD PTR [rip+0x20140a]        # 602060 <_GLOBAL_OFFSET_TABLE_+0x60>
+  400c56:	68 09 00 00 00       	push   0x9
+  400c5b:	e9 50 ff ff ff       	jmp    400bb0 <_init+0x28>
+
+0000000000400c60 <_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv@plt>:
+  400c60:	ff 25 02 14 20 00    	jmp    QWORD PTR [rip+0x201402]        # 602068 <_GLOBAL_OFFSET_TABLE_+0x68>
+  400c66:	68 0a 00 00 00       	push   0xa
+  400c6b:	e9 40 ff ff ff       	jmp    400bb0 <_init+0x28>
+
+0000000000400c70 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1ERKS4_@plt>:
+  400c70:	ff 25 fa 13 20 00    	jmp    QWORD PTR [rip+0x2013fa]        # 602070 <_GLOBAL_OFFSET_TABLE_+0x70>
+  400c76:	68 0b 00 00 00       	push   0xb
+  400c7b:	e9 30 ff ff ff       	jmp    400bb0 <_init+0x28>
+
+0000000000400c80 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1EPKcRKS3_@plt>:
+  400c80:	ff 25 f2 13 20 00    	jmp    QWORD PTR [rip+0x2013f2]        # 602078 <_GLOBAL_OFFSET_TABLE_+0x78>
+  400c86:	68 0c 00 00 00       	push   0xc
+  400c8b:	e9 20 ff ff ff       	jmp    400bb0 <_init+0x28>
+
+0000000000400c90 <_ZNSaIcEC1Ev@plt>:
+  400c90:	ff 25 ea 13 20 00    	jmp    QWORD PTR [rip+0x2013ea]        # 602080 <_GLOBAL_OFFSET_TABLE_+0x80>
+  400c96:	68 0d 00 00 00       	push   0xd
+  400c9b:	e9 10 ff ff ff       	jmp    400bb0 <_init+0x28>
+
+0000000000400ca0 <__gxx_personality_v0@plt>:
+  400ca0:	ff 25 e2 13 20 00    	jmp    QWORD PTR [rip+0x2013e2]        # 602088 <_GLOBAL_OFFSET_TABLE_+0x88>
+  400ca6:	68 0e 00 00 00       	push   0xe
+  400cab:	e9 00 ff ff ff       	jmp    400bb0 <_init+0x28>
+
+0000000000400cb0 <localtime@plt>:
+  400cb0:	ff 25 da 13 20 00    	jmp    QWORD PTR [rip+0x2013da]        # 602090 <_GLOBAL_OFFSET_TABLE_+0x90>
+  400cb6:	68 0f 00 00 00       	push   0xf
+  400cbb:	e9 f0 fe ff ff       	jmp    400bb0 <_init+0x28>
+
+0000000000400cc0 <_Unwind_Resume@plt>:
+  400cc0:	ff 25 d2 13 20 00    	jmp    QWORD PTR [rip+0x2013d2]        # 602098 <_GLOBAL_OFFSET_TABLE_+0x98>
+  400cc6:	68 10 00 00 00       	push   0x10
+  400ccb:	e9 e0 fe ff ff       	jmp    400bb0 <_init+0x28>
+
+0000000000400cd0 <strftime@plt>:
+  400cd0:	ff 25 ca 13 20 00    	jmp    QWORD PTR [rip+0x2013ca]        # 6020a0 <_GLOBAL_OFFSET_TABLE_+0xa0>
+  400cd6:	68 11 00 00 00       	push   0x11
+  400cdb:	e9 d0 fe ff ff       	jmp    400bb0 <_init+0x28>
+
+0000000000400ce0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEixEm@plt>:
+  400ce0:	ff 25 c2 13 20 00    	jmp    QWORD PTR [rip+0x2013c2]        # 6020a8 <_GLOBAL_OFFSET_TABLE_+0xa8>
+  400ce6:	68 12 00 00 00       	push   0x12
+  400ceb:	e9 c0 fe ff ff       	jmp    400bb0 <_init+0x28>
+
+0000000000400cf0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEpLEc@plt>:
+  400cf0:	ff 25 ba 13 20 00    	jmp    QWORD PTR [rip+0x2013ba]        # 6020b0 <_GLOBAL_OFFSET_TABLE_+0xb0>
+  400cf6:	68 13 00 00 00       	push   0x13
+  400cfb:	e9 b0 fe ff ff       	jmp    400bb0 <_init+0x28>
+
+Disassembly of section .plt.got:
+
+0000000000400d00 <.plt.got>:
+  400d00:	ff 25 f2 12 20 00    	jmp    QWORD PTR [rip+0x2012f2]        # 601ff8 <_DYNAMIC+0x1f0>
+  400d06:	66 90                	xchg   ax,ax
+
+Disassembly of section .text:
+
+0000000000400d10 <_start>:
+  400d10:	31 ed                	xor    ebp,ebp
+  400d12:	49 89 d1             	mov    r9,rdx
+  400d15:	5e                   	pop    rsi
+  400d16:	48 89 e2             	mov    rdx,rsp
+  400d19:	48 83 e4 f0          	and    rsp,0xfffffffffffffff0
+  400d1d:	50                   	push   rax
+  400d1e:	54                   	push   rsp
+  400d1f:	49 c7 c0 40 1a 40 00 	mov    r8,0x401a40
+  400d26:	48 c7 c1 d0 19 40 00 	mov    rcx,0x4019d0
+  400d2d:	48 c7 c7 06 0e 40 00 	mov    rdi,0x400e06
+  400d34:	e8 a7 fe ff ff       	call   400be0 <__libc_start_main@plt>
+  400d39:	f4                   	hlt    
+  400d3a:	66 0f 1f 44 00 00    	nop    WORD PTR [rax+rax*1+0x0]
+
+0000000000400d40 <deregister_tm_clones>:
+  400d40:	b8 ef 20 60 00       	mov    eax,0x6020ef
+  400d45:	55                   	push   rbp
+  400d46:	48 2d e8 20 60 00    	sub    rax,0x6020e8
+  400d4c:	48 83 f8 0e          	cmp    rax,0xe
+  400d50:	48 89 e5             	mov    rbp,rsp
+  400d53:	76 1b                	jbe    400d70 <deregister_tm_clones+0x30>
+  400d55:	b8 00 00 00 00       	mov    eax,0x0
+  400d5a:	48 85 c0             	test   rax,rax
+  400d5d:	74 11                	je     400d70 <deregister_tm_clones+0x30>
+  400d5f:	5d                   	pop    rbp
+  400d60:	bf e8 20 60 00       	mov    edi,0x6020e8
+  400d65:	ff e0                	jmp    rax
+  400d67:	66 0f 1f 84 00 00 00 	nop    WORD PTR [rax+rax*1+0x0]
+  400d6e:	00 00 
+  400d70:	5d                   	pop    rbp
+  400d71:	c3                   	ret    
+  400d72:	0f 1f 40 00          	nop    DWORD PTR [rax+0x0]
+  400d76:	66 2e 0f 1f 84 00 00 	nop    WORD PTR cs:[rax+rax*1+0x0]
+  400d7d:	00 00 00 
+
+0000000000400d80 <register_tm_clones>:
+  400d80:	be e8 20 60 00       	mov    esi,0x6020e8
+  400d85:	55                   	push   rbp
+  400d86:	48 81 ee e8 20 60 00 	sub    rsi,0x6020e8
+  400d8d:	48 c1 fe 03          	sar    rsi,0x3
+  400d91:	48 89 e5             	mov    rbp,rsp
+  400d94:	48 89 f0             	mov    rax,rsi
+  400d97:	48 c1 e8 3f          	shr    rax,0x3f
+  400d9b:	48 01 c6             	add    rsi,rax
+  400d9e:	48 d1 fe             	sar    rsi,1
+  400da1:	74 15                	je     400db8 <register_tm_clones+0x38>
+  400da3:	b8 00 00 00 00       	mov    eax,0x0
+  400da8:	48 85 c0             	test   rax,rax
+  400dab:	74 0b                	je     400db8 <register_tm_clones+0x38>
+  400dad:	5d                   	pop    rbp
+  400dae:	bf e8 20 60 00       	mov    edi,0x6020e8
+  400db3:	ff e0                	jmp    rax
+  400db5:	0f 1f 00             	nop    DWORD PTR [rax]
+  400db8:	5d                   	pop    rbp
+  400db9:	c3                   	ret    
+  400dba:	66 0f 1f 44 00 00    	nop    WORD PTR [rax+rax*1+0x0]
+
+0000000000400dc0 <__do_global_dtors_aux>:
+  400dc0:	80 3d 1b 13 20 00 00 	cmp    BYTE PTR [rip+0x20131b],0x0        # 6020e2 <_edata>
+  400dc7:	75 11                	jne    400dda <__do_global_dtors_aux+0x1a>
+  400dc9:	55                   	push   rbp
+  400dca:	48 89 e5             	mov    rbp,rsp
+  400dcd:	e8 6e ff ff ff       	call   400d40 <deregister_tm_clones>
+  400dd2:	5d                   	pop    rbp
+  400dd3:	c6 05 08 13 20 00 01 	mov    BYTE PTR [rip+0x201308],0x1        # 6020e2 <_edata>
+  400dda:	f3 c3                	repz ret 
+  400ddc:	0f 1f 40 00          	nop    DWORD PTR [rax+0x0]
+
+0000000000400de0 <frame_dummy>:
+  400de0:	bf 00 1e 60 00       	mov    edi,0x601e00
+  400de5:	48 83 3f 00          	cmp    QWORD PTR [rdi],0x0
+  400de9:	75 05                	jne    400df0 <frame_dummy+0x10>
+  400deb:	eb 93                	jmp    400d80 <register_tm_clones>
+  400ded:	0f 1f 00             	nop    DWORD PTR [rax]
+  400df0:	b8 00 00 00 00       	mov    eax,0x0
+  400df5:	48 85 c0             	test   rax,rax
+  400df8:	74 f1                	je     400deb <frame_dummy+0xb>
+  400dfa:	55                   	push   rbp
+  400dfb:	48 89 e5             	mov    rbp,rsp
+  400dfe:	ff d0                	call   rax
+  400e00:	5d                   	pop    rbp
+  400e01:	e9 7a ff ff ff       	jmp    400d80 <register_tm_clones>
+
+0000000000400e06 <main>:
+  400e06:	55                   	push   rbp
+  400e07:	48 89 e5             	mov    rbp,rsp
+  400e0a:	41 57                	push   r15
+  400e0c:	41 56                	push   r14
+  400e0e:	41 55                	push   r13
+  400e10:	41 54                	push   r12
+  400e12:	53                   	push   rbx
+  400e13:	48 81 ec e8 01 00 00 	sub    rsp,0x1e8
+  400e1a:	64 48 8b 04 25 28 00 	mov    rax,QWORD PTR fs:0x28
+  400e21:	00 00 
+  400e23:	48 89 45 c8          	mov    QWORD PTR [rbp-0x38],rax
+  400e27:	31 c0                	xor    eax,eax
+  400e29:	c6 05 b1 12 20 00 6d 	mov    BYTE PTR [rip+0x2012b1],0x6d        # 6020e1 <m>
+  400e30:	c6 05 a9 12 20 00 6e 	mov    BYTE PTR [rip+0x2012a9],0x6e        # 6020e0 <n>
+  400e37:	c6 05 9d 12 20 00 7a 	mov    BYTE PTR [rip+0x20129d],0x7a        # 6020db <z>
+  400e3e:	c6 05 88 12 20 00 79 	mov    BYTE PTR [rip+0x201288],0x79        # 6020cd <y>
+  400e45:	c6 05 7e 12 20 00 65 	mov    BYTE PTR [rip+0x20127e],0x65        # 6020ca <e>
+  400e4c:	c6 05 76 12 20 00 77 	mov    BYTE PTR [rip+0x201276],0x77        # 6020c9 <w>
+  400e53:	c6 05 76 12 20 00 6f 	mov    BYTE PTR [rip+0x201276],0x6f        # 6020d0 <o>
+  400e5a:	c6 05 6d 12 20 00 75 	mov    BYTE PTR [rip+0x20126d],0x75        # 6020ce <u>
+  400e61:	c6 05 60 12 20 00 2c 	mov    BYTE PTR [rip+0x201260],0x2c        # 6020c8 <q>
+  400e68:	c6 05 5f 12 20 00 75 	mov    BYTE PTR [rip+0x20125f],0x75        # 6020ce <u>
+  400e6f:	c6 05 5f 12 20 00 2c 	mov    BYTE PTR [rip+0x20125f],0x2c        # 6020d5 <f>
+  400e76:	c6 05 5b 12 20 00 6a 	mov    BYTE PTR [rip+0x20125b],0x6a        # 6020d8 <j>
+  400e7d:	c6 05 4d 12 20 00 70 	mov    BYTE PTR [rip+0x20124d],0x70        # 6020d1 <p>
+  400e84:	c6 05 43 12 20 00 75 	mov    BYTE PTR [rip+0x201243],0x75        # 6020ce <u>
+  400e8b:	c6 05 3f 12 20 00 70 	mov    BYTE PTR [rip+0x20123f],0x70        # 6020d1 <p>
+  400e92:	c6 05 45 12 20 00 76 	mov    BYTE PTR [rip+0x201245],0x76        # 6020de <v>
+  400e99:	c6 05 29 12 20 00 77 	mov    BYTE PTR [rip+0x201229],0x77        # 6020c9 <w>
+  400ea0:	c6 05 23 12 20 00 65 	mov    BYTE PTR [rip+0x201223],0x65        # 6020ca <e>
+  400ea7:	c6 05 30 12 20 00 76 	mov    BYTE PTR [rip+0x201230],0x76        # 6020de <v>
+  400eae:	c6 05 1b 12 20 00 6f 	mov    BYTE PTR [rip+0x20121b],0x6f        # 6020d0 <o>
+  400eb5:	c6 05 18 12 20 00 64 	mov    BYTE PTR [rip+0x201218],0x64        # 6020d4 <d>
+  400ebc:	c6 05 17 12 20 00 6c 	mov    BYTE PTR [rip+0x201217],0x6c        # 6020da <l>
+  400ec3:	c6 05 00 12 20 00 2c 	mov    BYTE PTR [rip+0x201200],0x2c        # 6020ca <e>
+  400eca:	c6 05 fb 11 20 00 74 	mov    BYTE PTR [rip+0x2011fb],0x74        # 6020cc <t>
+  400ed1:	c6 05 01 12 20 00 6b 	mov    BYTE PTR [rip+0x201201],0x6b        # 6020d9 <k>
+  400ed8:	c6 05 f9 11 20 00 6a 	mov    BYTE PTR [rip+0x2011f9],0x6a        # 6020d8 <j>
+  400edf:	c6 05 f5 11 20 00 2c 	mov    BYTE PTR [rip+0x2011f5],0x2c        # 6020db <z>
+  400ee6:	c6 05 dc 11 20 00 77 	mov    BYTE PTR [rip+0x2011dc],0x77        # 6020c9 <w>
+  400eed:	c6 05 e1 11 20 00 66 	mov    BYTE PTR [rip+0x2011e1],0x66        # 6020d5 <f>
+  400ef4:	c6 05 d4 11 20 00 69 	mov    BYTE PTR [rip+0x2011d4],0x69        # 6020cf <i>
+  400efb:	c6 05 d6 11 20 00 6a 	mov    BYTE PTR [rip+0x2011d6],0x6a        # 6020d8 <j>
+  400f02:	c6 05 ce 11 20 00 68 	mov    BYTE PTR [rip+0x2011ce],0x68        # 6020d7 <h>
+  400f09:	c6 05 c9 11 20 00 6b 	mov    BYTE PTR [rip+0x2011c9],0x6b        # 6020d9 <k>
+  400f10:	c6 05 c2 11 20 00 6b 	mov    BYTE PTR [rip+0x2011c2],0x6b        # 6020d9 <k>
+  400f17:	c6 05 b3 11 20 00 70 	mov    BYTE PTR [rip+0x2011b3],0x70        # 6020d1 <p>
+  400f1e:	c6 05 bc 11 20 00 6d 	mov    BYTE PTR [rip+0x2011bc],0x6d        # 6020e1 <m>
+  400f25:	c6 05 a9 11 20 00 2e 	mov    BYTE PTR [rip+0x2011a9],0x2e        # 6020d5 <f>
+  400f2c:	c6 05 99 11 20 00 74 	mov    BYTE PTR [rip+0x201199],0x74        # 6020cc <t>
+  400f33:	c6 05 8f 11 20 00 77 	mov    BYTE PTR [rip+0x20118f],0x77        # 6020c9 <w>
+  400f3a:	c6 05 97 11 20 00 6a 	mov    BYTE PTR [rip+0x201197],0x6a        # 6020d8 <j>
+  400f41:	c6 05 8d 11 20 00 66 	mov    BYTE PTR [rip+0x20118d],0x66        # 6020d5 <f>
+  400f48:	c6 05 88 11 20 00 68 	mov    BYTE PTR [rip+0x201188],0x68        # 6020d7 <h>
+  400f4f:	c6 05 85 11 20 00 21 	mov    BYTE PTR [rip+0x201185],0x21        # 6020db <z>
+  400f56:	c6 05 79 11 20 00 67 	mov    BYTE PTR [rip+0x201179],0x67        # 6020d6 <g>
+  400f5d:	c6 05 65 11 20 00 77 	mov    BYTE PTR [rip+0x201165],0x77        # 6020c9 <w>
+  400f64:	c6 05 62 11 20 00 79 	mov    BYTE PTR [rip+0x201162],0x79        # 6020cd <y>
+  400f6b:	c6 05 63 11 20 00 2e 	mov    BYTE PTR [rip+0x201163],0x2e        # 6020d5 <f>
+  400f72:	c6 05 57 11 20 00 6f 	mov    BYTE PTR [rip+0x201157],0x6f        # 6020d0 <o>
+  400f79:	c6 05 4c 11 20 00 74 	mov    BYTE PTR [rip+0x20114c],0x74        # 6020cc <t>
+  400f80:	c6 05 58 11 20 00 62 	mov    BYTE PTR [rip+0x201158],0x62        # 6020df <b>
+  400f87:	c6 05 4c 11 20 00 6c 	mov    BYTE PTR [rip+0x20114c],0x6c        # 6020da <l>
+  400f8e:	c6 05 45 11 20 00 6c 	mov    BYTE PTR [rip+0x201145],0x6c        # 6020da <l>
+  400f95:	c6 05 33 11 20 00 69 	mov    BYTE PTR [rip+0x201133],0x69        # 6020cf <i>
+  400f9c:	c6 05 32 11 20 00 66 	mov    BYTE PTR [rip+0x201132],0x66        # 6020d5 <f>
+  400fa3:	c6 05 2b 11 20 00 66 	mov    BYTE PTR [rip+0x20112b],0x66        # 6020d5 <f>
+  400faa:	c6 05 2c 11 20 00 63 	mov    BYTE PTR [rip+0x20112c],0x63        # 6020dd <c>
+  400fb1:	c6 05 19 11 20 00 70 	mov    BYTE PTR [rip+0x201119],0x70        # 6020d1 <p>
+  400fb8:	c6 05 1e 11 20 00 63 	mov    BYTE PTR [rip+0x20111e],0x63        # 6020dd <c>
+  400fbf:	c6 05 0c 11 20 00 21 	mov    BYTE PTR [rip+0x20110c],0x21        # 6020d2 <a>
+  400fc6:	c6 05 10 11 20 00 63 	mov    BYTE PTR [rip+0x201110],0x63        # 6020dd <c>
+  400fcd:	c6 05 fa 10 20 00 75 	mov    BYTE PTR [rip+0x2010fa],0x75        # 6020ce <u>
+  400fd4:	c6 05 02 11 20 00 63 	mov    BYTE PTR [rip+0x201102],0x63        # 6020dd <c>
+  400fdb:	c6 05 f6 10 20 00 6a 	mov    BYTE PTR [rip+0x2010f6],0x6a        # 6020d8 <j>
+  400fe2:	c6 05 ed 10 20 00 67 	mov    BYTE PTR [rip+0x2010ed],0x67        # 6020d6 <g>
+  400fe9:	c6 05 da 10 20 00 5f 	mov    BYTE PTR [rip+0x2010da],0x5f        # 6020ca <e>
+  400ff0:	c6 05 dd 10 20 00 64 	mov    BYTE PTR [rip+0x2010dd],0x64        # 6020d4 <d>
+  400ff7:	c6 05 d6 10 20 00 64 	mov    BYTE PTR [rip+0x2010d6],0x64        # 6020d4 <d>
+  400ffe:	c6 05 d5 10 20 00 6c 	mov    BYTE PTR [rip+0x2010d5],0x6c        # 6020da <l>
+  401005:	c6 05 bd 10 20 00 77 	mov    BYTE PTR [rip+0x2010bd],0x77        # 6020c9 <w>
+  40100c:	c6 05 c5 10 20 00 6a 	mov    BYTE PTR [rip+0x2010c5],0x6a        # 6020d8 <j>
+  401013:	c6 05 af 10 20 00 2c 	mov    BYTE PTR [rip+0x2010af],0x2c        # 6020c9 <w>
+  40101a:	c6 05 b2 10 20 00 73 	mov    BYTE PTR [rip+0x2010b2],0x73        # 6020d3 <s>
+  401021:	c6 05 a9 10 20 00 70 	mov    BYTE PTR [rip+0x2010a9],0x70        # 6020d1 <p>
+  401028:	c6 05 a6 10 20 00 66 	mov    BYTE PTR [rip+0x2010a6],0x66        # 6020d5 <f>
+  40102f:	c6 05 95 10 20 00 2e 	mov    BYTE PTR [rip+0x201095],0x2e        # 6020cb <r>
+  401036:	c6 05 98 10 20 00 5f 	mov    BYTE PTR [rip+0x201098],0x5f        # 6020d5 <f>
+  40103d:	c6 05 92 10 20 00 67 	mov    BYTE PTR [rip+0x201092],0x67        # 6020d6 <g>
+  401044:	c6 05 96 10 20 00 6d 	mov    BYTE PTR [rip+0x201096],0x6d        # 6020e1 <m>
+  40104b:	c6 05 80 10 20 00 5f 	mov    BYTE PTR [rip+0x201080],0x5f        # 6020d2 <a>
+  401052:	c6 05 7c 10 20 00 66 	mov    BYTE PTR [rip+0x20107c],0x66        # 6020d5 <f>
+  401059:	c6 05 7b 10 20 00 2e 	mov    BYTE PTR [rip+0x20107b],0x2e        # 6020db <z>
+  401060:	c6 05 6f 10 20 00 67 	mov    BYTE PTR [rip+0x20106f],0x67        # 6020d6 <g>
+  401067:	c6 05 73 10 20 00 6d 	mov    BYTE PTR [rip+0x201073],0x6d        # 6020e1 <m>
+  40106e:	c6 05 5d 10 20 00 61 	mov    BYTE PTR [rip+0x20105d],0x61        # 6020d2 <a>
+  401075:	c6 05 62 10 20 00 76 	mov    BYTE PTR [rip+0x201062],0x76        # 6020de <v>
+  40107c:	c6 05 59 10 20 00 78 	mov    BYTE PTR [rip+0x201059],0x78        # 6020dc <x>
+  401083:	c6 05 53 10 20 00 63 	mov    BYTE PTR [rip+0x201053],0x63        # 6020dd <c>
+  40108a:	c6 05 4b 10 20 00 2c 	mov    BYTE PTR [rip+0x20104b],0x2c        # 6020dc <x>
+  401091:	c6 05 3e 10 20 00 2e 	mov    BYTE PTR [rip+0x20103e],0x2e        # 6020d6 <g>
+  401098:	c6 05 29 10 20 00 2e 	mov    BYTE PTR [rip+0x201029],0x2e        # 6020c8 <q>
+  40109f:	c6 05 2d 10 20 00 73 	mov    BYTE PTR [rip+0x20102d],0x73        # 6020d3 <s>
+  4010a6:	c6 05 34 10 20 00 6d 	mov    BYTE PTR [rip+0x201034],0x6d        # 6020e1 <m>
+  4010ad:	c6 05 18 10 20 00 74 	mov    BYTE PTR [rip+0x201018],0x74        # 6020cc <t>
+  4010b4:	c6 05 12 10 20 00 79 	mov    BYTE PTR [rip+0x201012],0x79        # 6020cd <y>
+  4010bb:	c6 05 1c 10 20 00 76 	mov    BYTE PTR [rip+0x20101c],0x76        # 6020de <v>
+  4010c2:	c6 05 ff 0f 20 00 71 	mov    BYTE PTR [rip+0x200fff],0x71        # 6020c8 <q>
+  4010c9:	c6 05 11 10 20 00 6d 	mov    BYTE PTR [rip+0x201011],0x6d        # 6020e1 <m>
+  4010d0:	c6 05 04 10 20 00 7a 	mov    BYTE PTR [rip+0x201004],0x7a        # 6020db <z>
+  4010d7:	c6 05 f8 0f 20 00 67 	mov    BYTE PTR [rip+0x200ff8],0x67        # 6020d6 <g>
+  4010de:	c6 05 ee 0f 20 00 73 	mov    BYTE PTR [rip+0x200fee],0x73        # 6020d3 <s>
+  4010e5:	c6 05 f0 0f 20 00 78 	mov    BYTE PTR [rip+0x200ff0],0x78        # 6020dc <x>
+  4010ec:	c6 05 ee 0f 20 00 6d 	mov    BYTE PTR [rip+0x200fee],0x6d        # 6020e1 <m>
+  4010f3:	c6 05 db 0f 20 00 2c 	mov    BYTE PTR [rip+0x200fdb],0x2c        # 6020d5 <f>
+  4010fa:	c6 05 d5 0f 20 00 67 	mov    BYTE PTR [rip+0x200fd5],0x67        # 6020d6 <g>
+  401101:	c6 05 d1 0f 20 00 6b 	mov    BYTE PTR [rip+0x200fd1],0x6b        # 6020d9 <k>
+  401108:	c6 05 bb 0f 20 00 65 	mov    BYTE PTR [rip+0x200fbb],0x65        # 6020ca <e>
+  40110f:	c6 05 c1 0f 20 00 68 	mov    BYTE PTR [rip+0x200fc1],0x68        # 6020d7 <h>
+  401116:	c6 05 ad 0f 20 00 5f 	mov    BYTE PTR [rip+0x200fad],0x5f        # 6020ca <e>
+  40111d:	c6 05 b4 0f 20 00 6a 	mov    BYTE PTR [rip+0x200fb4],0x6a        # 6020d8 <j>
+  401124:	c6 05 aa 0f 20 00 66 	mov    BYTE PTR [rip+0x200faa],0x66        # 6020d5 <f>
+  40112b:	c6 05 9e 0f 20 00 6f 	mov    BYTE PTR [rip+0x200f9e],0x6f        # 6020d0 <o>
+  401132:	c6 05 93 0f 20 00 74 	mov    BYTE PTR [rip+0x200f93],0x74        # 6020cc <t>
+  401139:	c6 05 9a 0f 20 00 6c 	mov    BYTE PTR [rip+0x200f9a],0x6c        # 6020da <l>
+  401140:	c6 05 8c 0f 20 00 73 	mov    BYTE PTR [rip+0x200f8c],0x73        # 6020d3 <s>
+  401147:	c6 05 7a 0f 20 00 71 	mov    BYTE PTR [rip+0x200f7a],0x71        # 6020c8 <q>
+  40114e:	c6 05 7e 0f 20 00 73 	mov    BYTE PTR [rip+0x200f7e],0x73        # 6020d3 <s>
+  401155:	c6 05 7e 0f 20 00 6c 	mov    BYTE PTR [rip+0x200f7e],0x6c        # 6020da <l>
+  40115c:	c6 05 7c 0f 20 00 62 	mov    BYTE PTR [rip+0x200f7c],0x62        # 6020df <b>
+  401163:	c6 05 69 0f 20 00 73 	mov    BYTE PTR [rip+0x200f69],0x73        # 6020d3 <s>
+  40116a:	c6 05 62 0f 20 00 73 	mov    BYTE PTR [rip+0x200f62],0x73        # 6020d3 <s>
+  401171:	c6 05 63 0f 20 00 7a 	mov    BYTE PTR [rip+0x200f63],0x7a        # 6020db <z>
+  401178:	c6 05 61 0f 20 00 6e 	mov    BYTE PTR [rip+0x200f61],0x6e        # 6020e0 <n>
+  40117f:	c6 05 50 0f 20 00 67 	mov    BYTE PTR [rip+0x200f50],0x67        # 6020d6 <g>
+  401186:	c6 05 45 0f 20 00 61 	mov    BYTE PTR [rip+0x200f45],0x61        # 6020d2 <a>
+  40118d:	c6 05 42 0f 20 00 67 	mov    BYTE PTR [rip+0x200f42],0x67        # 6020d6 <g>
+  401194:	c6 05 40 0f 20 00 7a 	mov    BYTE PTR [rip+0x200f40],0x7a        # 6020db <z>
+  40119b:	c6 05 3d 0f 20 00 62 	mov    BYTE PTR [rip+0x200f3d],0x62        # 6020df <b>
+  4011a2:	c6 05 29 0f 20 00 61 	mov    BYTE PTR [rip+0x200f29],0x61        # 6020d2 <a>
+  4011a9:	c6 05 24 0f 20 00 64 	mov    BYTE PTR [rip+0x200f24],0x64        # 6020d4 <d>
+  4011b0:	c6 05 22 0f 20 00 6b 	mov    BYTE PTR [rip+0x200f22],0x6b        # 6020d9 <k>
+  4011b7:	c6 05 0e 0f 20 00 74 	mov    BYTE PTR [rip+0x200f0e],0x74        # 6020cc <t>
+  4011be:	c6 05 18 0f 20 00 63 	mov    BYTE PTR [rip+0x200f18],0x63        # 6020dd <c>
+  4011c5:	c6 05 05 0f 20 00 70 	mov    BYTE PTR [rip+0x200f05],0x70        # 6020d1 <p>
+  4011cc:	c6 05 0d 0f 20 00 6e 	mov    BYTE PTR [rip+0x200f0d],0x6e        # 6020e0 <n>
+  4011d3:	c6 05 f7 0e 20 00 70 	mov    BYTE PTR [rip+0x200ef7],0x70        # 6020d1 <p>
+  4011da:	c6 05 fa 0e 20 00 7a 	mov    BYTE PTR [rip+0x200efa],0x7a        # 6020db <z>
+  4011e1:	c6 05 f5 0e 20 00 63 	mov    BYTE PTR [rip+0x200ef5],0x63        # 6020dd <c>
+  4011e8:	c6 05 e6 0e 20 00 66 	mov    BYTE PTR [rip+0x200ee6],0x66        # 6020d5 <f>
+  4011ef:	c6 05 eb 0e 20 00 6d 	mov    BYTE PTR [rip+0x200eeb],0x6d        # 6020e1 <m>
+  4011f6:	c6 05 da 0e 20 00 68 	mov    BYTE PTR [rip+0x200eda],0x68        # 6020d7 <h>
+  4011fd:	c6 05 cb 0e 20 00 69 	mov    BYTE PTR [rip+0x200ecb],0x69        # 6020cf <i>
+  401204:	c6 05 cb 0e 20 00 67 	mov    BYTE PTR [rip+0x200ecb],0x67        # 6020d6 <g>
+  40120b:	c6 05 c4 0e 20 00 67 	mov    BYTE PTR [rip+0x200ec4],0x67        # 6020d6 <g>
+  401212:	c6 05 b6 0e 20 00 69 	mov    BYTE PTR [rip+0x200eb6],0x69        # 6020cf <i>
+  401219:	c6 05 c1 0e 20 00 6d 	mov    BYTE PTR [rip+0x200ec1],0x6d        # 6020e1 <m>
+  401220:	c6 05 a9 0e 20 00 6f 	mov    BYTE PTR [rip+0x200ea9],0x6f        # 6020d0 <o>
+  401227:	c6 05 a2 0e 20 00 6f 	mov    BYTE PTR [rip+0x200ea2],0x6f        # 6020d0 <o>
+  40122e:	c6 05 a9 0e 20 00 76 	mov    BYTE PTR [rip+0x200ea9],0x76        # 6020de <v>
+  401235:	c6 05 a3 0e 20 00 62 	mov    BYTE PTR [rip+0x200ea3],0x62        # 6020df <b>
+  40123c:	c6 05 98 0e 20 00 7a 	mov    BYTE PTR [rip+0x200e98],0x7a        # 6020db <z>
+  401243:	c6 05 8f 0e 20 00 6b 	mov    BYTE PTR [rip+0x200e8f],0x6b        # 6020d9 <k>
+  40124a:	c6 05 8a 0e 20 00 7a 	mov    BYTE PTR [rip+0x200e8a],0x7a        # 6020db <z>
+  401251:	c6 05 7c 0e 20 00 64 	mov    BYTE PTR [rip+0x200e7c],0x64        # 6020d4 <d>
+  401258:	c6 05 72 0e 20 00 70 	mov    BYTE PTR [rip+0x200e72],0x70        # 6020d1 <p>
+  40125f:	c6 05 75 0e 20 00 7a 	mov    BYTE PTR [rip+0x200e75],0x7a        # 6020db <z>
+  401266:	c6 05 6a 0e 20 00 68 	mov    BYTE PTR [rip+0x200e6a],0x68        # 6020d7 <h>
+  40126d:	c6 05 5d 0e 20 00 70 	mov    BYTE PTR [rip+0x200e5d],0x70        # 6020d1 <p>
+  401274:	c6 05 63 0e 20 00 21 	mov    BYTE PTR [rip+0x200e63],0x21        # 6020de <v>
+  40127b:	c6 05 54 0e 20 00 67 	mov    BYTE PTR [rip+0x200e54],0x67        # 6020d6 <g>
+  401282:	c6 05 4c 0e 20 00 66 	mov    BYTE PTR [rip+0x200e4c],0x66        # 6020d5 <f>
+  401289:	c6 05 4b 0e 20 00 7a 	mov    BYTE PTR [rip+0x200e4b],0x7a        # 6020db <z>
+  401290:	c6 05 47 0e 20 00 76 	mov    BYTE PTR [rip+0x200e47],0x76        # 6020de <v>
+  401297:	c6 05 2c 0e 20 00 2e 	mov    BYTE PTR [rip+0x200e2c],0x2e        # 6020ca <e>
+  40129e:	c6 05 2d 0e 20 00 61 	mov    BYTE PTR [rip+0x200e2d],0x61        # 6020d2 <a>
+  4012a5:	c6 05 22 0e 20 00 75 	mov    BYTE PTR [rip+0x200e22],0x75        # 6020ce <u>
+  4012ac:	c6 05 1f 0e 20 00 5f 	mov    BYTE PTR [rip+0x200e1f],0x5f        # 6020d2 <a>
+  4012b3:	c6 05 14 0e 20 00 75 	mov    BYTE PTR [rip+0x200e14],0x75        # 6020ce <u>
+  4012ba:	c6 05 15 0e 20 00 2e 	mov    BYTE PTR [rip+0x200e15],0x2e        # 6020d6 <g>
+  4012c1:	c6 05 09 0e 20 00 70 	mov    BYTE PTR [rip+0x200e09],0x70        # 6020d1 <p>
+  4012c8:	c6 05 06 0e 20 00 66 	mov    BYTE PTR [rip+0x200e06],0x66        # 6020d5 <f>
+  4012cf:	c6 05 f6 0d 20 00 74 	mov    BYTE PTR [rip+0x200df6],0x74        # 6020cc <t>
+  4012d6:	c6 05 ef 0d 20 00 74 	mov    BYTE PTR [rip+0x200def],0x74        # 6020cc <t>
+  4012dd:	c6 05 fd 0d 20 00 6d 	mov    BYTE PTR [rip+0x200dfd],0x6d        # 6020e1 <m>
+  4012e4:	c6 05 e0 0d 20 00 72 	mov    BYTE PTR [rip+0x200de0],0x72        # 6020cb <r>
+  4012eb:	c6 05 dc 0d 20 00 75 	mov    BYTE PTR [rip+0x200ddc],0x75        # 6020ce <u>
+  4012f2:	c6 05 dc 0d 20 00 66 	mov    BYTE PTR [rip+0x200ddc],0x66        # 6020d5 <f>
+  4012f9:	c6 05 d1 0d 20 00 70 	mov    BYTE PTR [rip+0x200dd1],0x70        # 6020d1 <p>
+  401300:	c6 05 cf 0d 20 00 5f 	mov    BYTE PTR [rip+0x200dcf],0x5f        # 6020d6 <g>
+  401307:	c6 05 be 0d 20 00 74 	mov    BYTE PTR [rip+0x200dbe],0x74        # 6020cc <t>
+  40130e:	c6 05 c9 0d 20 00 76 	mov    BYTE PTR [rip+0x200dc9],0x76        # 6020de <v>
+  401315:	c6 05 c3 0d 20 00 62 	mov    BYTE PTR [rip+0x200dc3],0x62        # 6020df <b>
+  40131c:	c6 05 b1 0d 20 00 5f 	mov    BYTE PTR [rip+0x200db1],0x5f        # 6020d4 <d>
+  401323:	c6 05 a0 0d 20 00 65 	mov    BYTE PTR [rip+0x200da0],0x65        # 6020ca <e>
+  40132a:	c6 05 b0 0d 20 00 6d 	mov    BYTE PTR [rip+0x200db0],0x6d        # 6020e1 <m>
+  401331:	c6 05 9d 0d 20 00 2e 	mov    BYTE PTR [rip+0x200d9d],0x2e        # 6020d5 <f>
+  401338:	c6 05 9b 0d 20 00 6c 	mov    BYTE PTR [rip+0x200d9b],0x6c        # 6020da <l>
+  40133f:	c6 05 89 0d 20 00 69 	mov    BYTE PTR [rip+0x200d89],0x69        # 6020cf <i>
+  401346:	c6 05 89 0d 20 00 67 	mov    BYTE PTR [rip+0x200d89],0x67        # 6020d6 <g>
+  40134d:	c6 05 80 0d 20 00 64 	mov    BYTE PTR [rip+0x200d80],0x64        # 6020d4 <d>
+  401354:	c6 05 77 0d 20 00 61 	mov    BYTE PTR [rip+0x200d77],0x61        # 6020d2 <a>
+  40135b:	c6 05 73 0d 20 00 66 	mov    BYTE PTR [rip+0x200d73],0x66        # 6020d5 <f>
+  401362:	c6 05 72 0d 20 00 21 	mov    BYTE PTR [rip+0x200d72],0x21        # 6020db <z>
+  401369:	c6 05 70 0d 20 00 6e 	mov    BYTE PTR [rip+0x200d70],0x6e        # 6020e0 <n>
+  401370:	c6 05 65 0d 20 00 78 	mov    BYTE PTR [rip+0x200d65],0x78        # 6020dc <x>
+  401377:	48 8d 85 10 fe ff ff 	lea    rax,[rbp-0x1f0]
+  40137e:	be 00 00 00 00       	mov    esi,0x0
+  401383:	48 89 c7             	mov    rdi,rax
+  401386:	e8 45 f8 ff ff       	call   400bd0 <gettimeofday@plt>
+  40138b:	48 8b 85 10 fe ff ff 	mov    rax,QWORD PTR [rbp-0x1f0]
+  401392:	48 89 85 08 fe ff ff 	mov    QWORD PTR [rbp-0x1f8],rax
+  401399:	48 8d 85 08 fe ff ff 	lea    rax,[rbp-0x1f8]
+  4013a0:	48 89 c7             	mov    rdi,rax
+  4013a3:	e8 08 f9 ff ff       	call   400cb0 <localtime@plt>
+  4013a8:	48 89 c2             	mov    rdx,rax
+  4013ab:	48 8d 45 a0          	lea    rax,[rbp-0x60]
+  4013af:	48 89 d1             	mov    rcx,rdx
+  4013b2:	ba 54 1a 40 00       	mov    edx,0x401a54
+  4013b7:	be 1e 00 00 00       	mov    esi,0x1e
+  4013bc:	48 89 c7             	mov    rdi,rax
+  4013bf:	e8 0c f9 ff ff       	call   400cd0 <strftime@plt>
+  4013c4:	48 8d 85 02 fe ff ff 	lea    rax,[rbp-0x1fe]
+  4013cb:	48 89 c7             	mov    rdi,rax
+  4013ce:	e8 bd f8 ff ff       	call   400c90 <_ZNSaIcEC1Ev@plt>
+  4013d3:	48 8d 95 02 fe ff ff 	lea    rdx,[rbp-0x1fe]
+  4013da:	48 8d 4d a0          	lea    rcx,[rbp-0x60]
+  4013de:	48 8d 45 80          	lea    rax,[rbp-0x80]
+  4013e2:	48 89 ce             	mov    rsi,rcx
+  4013e5:	48 89 c7             	mov    rdi,rax
+  4013e8:	e8 93 f8 ff ff       	call   400c80 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1EPKcRKS3_@plt>
+  4013ed:	48 8d 45 80          	lea    rax,[rbp-0x80]
+  4013f1:	be 61 1a 40 00       	mov    esi,0x401a61
+  4013f6:	48 89 c7             	mov    rdi,rax
+  4013f9:	e8 32 f8 ff ff       	call   400c30 <_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7compareEPKc@plt>
+  4013fe:	85 c0                	test   eax,eax
+  401400:	0f 94 c3             	sete   bl
+  401403:	48 8d 45 80          	lea    rax,[rbp-0x80]
+  401407:	48 89 c7             	mov    rdi,rax
+  40140a:	e8 e1 f7 ff ff       	call   400bf0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@plt>
+  40140f:	48 8d 85 02 fe ff ff 	lea    rax,[rbp-0x1fe]
+  401416:	48 89 c7             	mov    rdi,rax
+  401419:	e8 02 f8 ff ff       	call   400c20 <_ZNSaIcED1Ev@plt>
+  40141e:	84 db                	test   bl,bl
+  401420:	0f 84 98 03 00 00    	je     4017be <main+0x9b8>
+  401426:	48 8d 85 02 fe ff ff 	lea    rax,[rbp-0x1fe]
+  40142d:	48 89 c7             	mov    rdi,rax
+  401430:	e8 5b f8 ff ff       	call   400c90 <_ZNSaIcEC1Ev@plt>
+  401435:	48 8d 95 02 fe ff ff 	lea    rdx,[rbp-0x1fe]
+  40143c:	48 8d 85 20 fe ff ff 	lea    rax,[rbp-0x1e0]
+  401443:	be 66 1a 40 00       	mov    esi,0x401a66
+  401448:	48 89 c7             	mov    rdi,rax
+  40144b:	e8 30 f8 ff ff       	call   400c80 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1EPKcRKS3_@plt>
+  401450:	48 8d 85 02 fe ff ff 	lea    rax,[rbp-0x1fe]
+  401457:	48 89 c7             	mov    rdi,rax
+  40145a:	e8 c1 f7 ff ff       	call   400c20 <_ZNSaIcED1Ev@plt>
+  40145f:	0f b6 05 7a 0c 20 00 	movzx  eax,BYTE PTR [rip+0x200c7a]        # 6020e0 <n>
+  401466:	0f be d8             	movsx  ebx,al
+  401469:	0f b6 05 64 0c 20 00 	movzx  eax,BYTE PTR [rip+0x200c64]        # 6020d4 <d>
+  401470:	44 0f be e0          	movsx  r12d,al
+  401474:	0f b6 05 5b 0c 20 00 	movzx  eax,BYTE PTR [rip+0x200c5b]        # 6020d6 <g>
+  40147b:	44 0f be e8          	movsx  r13d,al
+  40147f:	0f b6 05 54 0c 20 00 	movzx  eax,BYTE PTR [rip+0x200c54]        # 6020da <l>
+  401486:	44 0f be f0          	movsx  r14d,al
+  40148a:	0f b6 05 3e 0c 20 00 	movzx  eax,BYTE PTR [rip+0x200c3e]        # 6020cf <i>
+  401491:	44 0f be f8          	movsx  r15d,al
+  401495:	0f b6 05 3f 0c 20 00 	movzx  eax,BYTE PTR [rip+0x200c3f]        # 6020db <z>
+  40149c:	0f be c0             	movsx  eax,al
+  40149f:	89 85 fc fd ff ff    	mov    DWORD PTR [rbp-0x204],eax
+  4014a5:	0f b6 05 30 0c 20 00 	movzx  eax,BYTE PTR [rip+0x200c30]        # 6020dc <x>
+  4014ac:	0f be c0             	movsx  eax,al
+  4014af:	89 85 f8 fd ff ff    	mov    DWORD PTR [rbp-0x208],eax
+  4014b5:	0f b6 05 21 0c 20 00 	movzx  eax,BYTE PTR [rip+0x200c21]        # 6020dd <c>
+  4014bc:	0f be c0             	movsx  eax,al
+  4014bf:	89 85 f4 fd ff ff    	mov    DWORD PTR [rbp-0x20c],eax
+  4014c5:	0f b6 05 13 0c 20 00 	movzx  eax,BYTE PTR [rip+0x200c13]        # 6020df <b>
+  4014cc:	0f be c0             	movsx  eax,al
+  4014cf:	89 85 f0 fd ff ff    	mov    DWORD PTR [rbp-0x210],eax
+  4014d5:	0f b6 05 f6 0b 20 00 	movzx  eax,BYTE PTR [rip+0x200bf6]        # 6020d2 <a>
+  4014dc:	0f be d0             	movsx  edx,al
+  4014df:	48 8d 85 40 fe ff ff 	lea    rax,[rbp-0x1c0]
+  4014e6:	48 8d 8d 20 fe ff ff 	lea    rcx,[rbp-0x1e0]
+  4014ed:	48 89 ce             	mov    rsi,rcx
+  4014f0:	48 89 c7             	mov    rdi,rax
+  4014f3:	e8 4f 04 00 00       	call   401947 <_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EERKS8_S5_>
+  4014f8:	48 8d 85 60 fe ff ff 	lea    rax,[rbp-0x1a0]
+  4014ff:	48 8d 8d 40 fe ff ff 	lea    rcx,[rbp-0x1c0]
+  401506:	8b 95 f0 fd ff ff    	mov    edx,DWORD PTR [rbp-0x210]
+  40150c:	48 89 ce             	mov    rsi,rcx
+  40150f:	48 89 c7             	mov    rdi,rax
+  401512:	e8 30 04 00 00       	call   401947 <_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EERKS8_S5_>
+  401517:	48 8d 85 80 fe ff ff 	lea    rax,[rbp-0x180]
+  40151e:	48 8d 8d 60 fe ff ff 	lea    rcx,[rbp-0x1a0]
+  401525:	8b 95 f4 fd ff ff    	mov    edx,DWORD PTR [rbp-0x20c]
+  40152b:	48 89 ce             	mov    rsi,rcx
+  40152e:	48 89 c7             	mov    rdi,rax
+  401531:	e8 11 04 00 00       	call   401947 <_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EERKS8_S5_>
+  401536:	48 8d 85 a0 fe ff ff 	lea    rax,[rbp-0x160]
+  40153d:	48 8d 8d 80 fe ff ff 	lea    rcx,[rbp-0x180]
+  401544:	8b 95 f8 fd ff ff    	mov    edx,DWORD PTR [rbp-0x208]
+  40154a:	48 89 ce             	mov    rsi,rcx
+  40154d:	48 89 c7             	mov    rdi,rax
+  401550:	e8 f2 03 00 00       	call   401947 <_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EERKS8_S5_>
+  401555:	48 8d 85 c0 fe ff ff 	lea    rax,[rbp-0x140]
+  40155c:	48 8d 8d a0 fe ff ff 	lea    rcx,[rbp-0x160]
+  401563:	8b 95 fc fd ff ff    	mov    edx,DWORD PTR [rbp-0x204]
+  401569:	48 89 ce             	mov    rsi,rcx
+  40156c:	48 89 c7             	mov    rdi,rax
+  40156f:	e8 d3 03 00 00       	call   401947 <_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EERKS8_S5_>
+  401574:	48 8d 85 e0 fe ff ff 	lea    rax,[rbp-0x120]
+  40157b:	48 8d 8d c0 fe ff ff 	lea    rcx,[rbp-0x140]
+  401582:	44 89 fa             	mov    edx,r15d
+  401585:	48 89 ce             	mov    rsi,rcx
+  401588:	48 89 c7             	mov    rdi,rax
+  40158b:	e8 b7 03 00 00       	call   401947 <_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EERKS8_S5_>
+  401590:	48 8d 85 00 ff ff ff 	lea    rax,[rbp-0x100]
+  401597:	48 8d 8d e0 fe ff ff 	lea    rcx,[rbp-0x120]
+  40159e:	44 89 f2             	mov    edx,r14d
+  4015a1:	48 89 ce             	mov    rsi,rcx
+  4015a4:	48 89 c7             	mov    rdi,rax
+  4015a7:	e8 9b 03 00 00       	call   401947 <_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EERKS8_S5_>
+  4015ac:	48 8d 85 20 ff ff ff 	lea    rax,[rbp-0xe0]
+  4015b3:	48 8d 8d 00 ff ff ff 	lea    rcx,[rbp-0x100]
+  4015ba:	44 89 ea             	mov    edx,r13d
+  4015bd:	48 89 ce             	mov    rsi,rcx
+  4015c0:	48 89 c7             	mov    rdi,rax
+  4015c3:	e8 7f 03 00 00       	call   401947 <_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EERKS8_S5_>
+  4015c8:	48 8d 85 40 ff ff ff 	lea    rax,[rbp-0xc0]
+  4015cf:	48 8d 8d 20 ff ff ff 	lea    rcx,[rbp-0xe0]
+  4015d6:	44 89 e2             	mov    edx,r12d
+  4015d9:	48 89 ce             	mov    rsi,rcx
+  4015dc:	48 89 c7             	mov    rdi,rax
+  4015df:	e8 63 03 00 00       	call   401947 <_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EERKS8_S5_>
+  4015e4:	48 8d 85 60 ff ff ff 	lea    rax,[rbp-0xa0]
+  4015eb:	48 8d 8d 40 ff ff ff 	lea    rcx,[rbp-0xc0]
+  4015f2:	89 da                	mov    edx,ebx
+  4015f4:	48 89 ce             	mov    rsi,rcx
+  4015f7:	48 89 c7             	mov    rdi,rax
+  4015fa:	e8 48 03 00 00       	call   401947 <_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EERKS8_S5_>
+  4015ff:	48 8d 95 60 ff ff ff 	lea    rdx,[rbp-0xa0]
+  401606:	48 8d 85 20 fe ff ff 	lea    rax,[rbp-0x1e0]
+  40160d:	48 89 d6             	mov    rsi,rdx
+  401610:	48 89 c7             	mov    rdi,rax
+  401613:	e8 38 f6 ff ff       	call   400c50 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEaSERKS4_@plt>
+  401618:	48 8d 85 60 ff ff ff 	lea    rax,[rbp-0xa0]
+  40161f:	48 89 c7             	mov    rdi,rax
+  401622:	e8 c9 f5 ff ff       	call   400bf0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@plt>
+  401627:	48 8d 85 40 ff ff ff 	lea    rax,[rbp-0xc0]
+  40162e:	48 89 c7             	mov    rdi,rax
+  401631:	e8 ba f5 ff ff       	call   400bf0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@plt>
+  401636:	48 8d 85 20 ff ff ff 	lea    rax,[rbp-0xe0]
+  40163d:	48 89 c7             	mov    rdi,rax
+  401640:	e8 ab f5 ff ff       	call   400bf0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@plt>
+  401645:	48 8d 85 00 ff ff ff 	lea    rax,[rbp-0x100]
+  40164c:	48 89 c7             	mov    rdi,rax
+  40164f:	e8 9c f5 ff ff       	call   400bf0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@plt>
+  401654:	48 8d 85 e0 fe ff ff 	lea    rax,[rbp-0x120]
+  40165b:	48 89 c7             	mov    rdi,rax
+  40165e:	e8 8d f5 ff ff       	call   400bf0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@plt>
+  401663:	48 8d 85 c0 fe ff ff 	lea    rax,[rbp-0x140]
+  40166a:	48 89 c7             	mov    rdi,rax
+  40166d:	e8 7e f5 ff ff       	call   400bf0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@plt>
+  401672:	48 8d 85 a0 fe ff ff 	lea    rax,[rbp-0x160]
+  401679:	48 89 c7             	mov    rdi,rax
+  40167c:	e8 6f f5 ff ff       	call   400bf0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@plt>
+  401681:	48 8d 85 80 fe ff ff 	lea    rax,[rbp-0x180]
+  401688:	48 89 c7             	mov    rdi,rax
+  40168b:	e8 60 f5 ff ff       	call   400bf0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@plt>
+  401690:	48 8d 85 60 fe ff ff 	lea    rax,[rbp-0x1a0]
+  401697:	48 89 c7             	mov    rdi,rax
+  40169a:	e8 51 f5 ff ff       	call   400bf0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@plt>
+  40169f:	48 8d 85 40 fe ff ff 	lea    rax,[rbp-0x1c0]
+  4016a6:	48 89 c7             	mov    rdi,rax
+  4016a9:	e8 42 f5 ff ff       	call   400bf0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@plt>
+  4016ae:	c6 85 03 fe ff ff 78 	mov    BYTE PTR [rbp-0x1fd],0x78
+  4016b5:	48 8d 85 02 fe ff ff 	lea    rax,[rbp-0x1fe]
+  4016bc:	48 89 c7             	mov    rdi,rax
+  4016bf:	e8 cc f5 ff ff       	call   400c90 <_ZNSaIcEC1Ev@plt>
+  4016c4:	48 8d 95 02 fe ff ff 	lea    rdx,[rbp-0x1fe]
+  4016cb:	48 8d 45 80          	lea    rax,[rbp-0x80]
+  4016cf:	be 66 1a 40 00       	mov    esi,0x401a66
+  4016d4:	48 89 c7             	mov    rdi,rax
+  4016d7:	e8 a4 f5 ff ff       	call   400c80 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1EPKcRKS3_@plt>
+  4016dc:	48 8d 85 02 fe ff ff 	lea    rax,[rbp-0x1fe]
+  4016e3:	48 89 c7             	mov    rdi,rax
+  4016e6:	e8 35 f5 ff ff       	call   400c20 <_ZNSaIcED1Ev@plt>
+  4016eb:	c7 85 04 fe ff ff 00 	mov    DWORD PTR [rbp-0x1fc],0x0
+  4016f2:	00 00 00 
+  4016f5:	8b 85 04 fe ff ff    	mov    eax,DWORD PTR [rbp-0x1fc]
+  4016fb:	48 63 d8             	movsxd rbx,eax
+  4016fe:	48 8d 85 20 fe ff ff 	lea    rax,[rbp-0x1e0]
+  401705:	48 89 c7             	mov    rdi,rax
+  401708:	e8 33 f5 ff ff       	call   400c40 <_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4sizeEv@plt>
+  40170d:	48 39 c3             	cmp    rbx,rax
+  401710:	0f 92 c0             	setb   al
+  401713:	84 c0                	test   al,al
+  401715:	74 75                	je     40178c <main+0x986>
+  401717:	8b 85 04 fe ff ff    	mov    eax,DWORD PTR [rbp-0x1fc]
+  40171d:	48 63 d0             	movsxd rdx,eax
+  401720:	48 8d 85 20 fe ff ff 	lea    rax,[rbp-0x1e0]
+  401727:	48 89 d6             	mov    rsi,rdx
+  40172a:	48 89 c7             	mov    rdi,rax
+  40172d:	e8 ae f5 ff ff       	call   400ce0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEixEm@plt>
+  401732:	0f b6 30             	movzx  esi,BYTE PTR [rax]
+  401735:	0f be 95 03 fe ff ff 	movsx  edx,BYTE PTR [rbp-0x1fd]
+  40173c:	8b 85 04 fe ff ff    	mov    eax,DWORD PTR [rbp-0x1fc]
+  401742:	01 c2                	add    edx,eax
+  401744:	48 63 c2             	movsxd rax,edx
+  401747:	48 69 c0 81 80 80 80 	imul   rax,rax,0xffffffff80808081
+  40174e:	48 c1 e8 20          	shr    rax,0x20
+  401752:	01 d0                	add    eax,edx
+  401754:	c1 f8 07             	sar    eax,0x7
+  401757:	89 c1                	mov    ecx,eax
+  401759:	89 d0                	mov    eax,edx
+  40175b:	c1 f8 1f             	sar    eax,0x1f
+  40175e:	29 c1                	sub    ecx,eax
+  401760:	89 c8                	mov    eax,ecx
+  401762:	89 c1                	mov    ecx,eax
+  401764:	c1 e1 08             	shl    ecx,0x8
+  401767:	29 c1                	sub    ecx,eax
+  401769:	89 d0                	mov    eax,edx
+  40176b:	29 c8                	sub    eax,ecx
+  40176d:	31 f0                	xor    eax,esi
+  40176f:	0f be d0             	movsx  edx,al
+  401772:	48 8d 45 80          	lea    rax,[rbp-0x80]
+  401776:	89 d6                	mov    esi,edx
+  401778:	48 89 c7             	mov    rdi,rax
+  40177b:	e8 70 f5 ff ff       	call   400cf0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEpLEc@plt>
+  401780:	83 85 04 fe ff ff 01 	add    DWORD PTR [rbp-0x1fc],0x1
+  401787:	e9 69 ff ff ff       	jmp    4016f5 <main+0x8ef>
+  40178c:	48 8d 85 20 fe ff ff 	lea    rax,[rbp-0x1e0]
+  401793:	48 89 c7             	mov    rdi,rax
+  401796:	e8 c5 f4 ff ff       	call   400c60 <_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv@plt>
+  40179b:	48 89 c7             	mov    rdi,rax
+  40179e:	e8 1d f4 ff ff       	call   400bc0 <puts@plt>
+  4017a3:	48 8d 45 80          	lea    rax,[rbp-0x80]
+  4017a7:	48 89 c7             	mov    rdi,rax
+  4017aa:	e8 41 f4 ff ff       	call   400bf0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@plt>
+  4017af:	48 8d 85 20 fe ff ff 	lea    rax,[rbp-0x1e0]
+  4017b6:	48 89 c7             	mov    rdi,rax
+  4017b9:	e8 32 f4 ff ff       	call   400bf0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@plt>
+  4017be:	b8 00 00 00 00       	mov    eax,0x0
+  4017c3:	48 8b 75 c8          	mov    rsi,QWORD PTR [rbp-0x38]
+  4017c7:	64 48 33 34 25 28 00 	xor    rsi,QWORD PTR fs:0x28
+  4017ce:	00 00 
+  4017d0:	0f 84 5f 01 00 00    	je     401935 <main+0xb2f>
+  4017d6:	e9 55 01 00 00       	jmp    401930 <main+0xb2a>
+  4017db:	48 89 c3             	mov    rbx,rax
+  4017de:	48 8d 45 80          	lea    rax,[rbp-0x80]
+  4017e2:	48 89 c7             	mov    rdi,rax
+  4017e5:	e8 06 f4 ff ff       	call   400bf0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@plt>
+  4017ea:	eb 03                	jmp    4017ef <main+0x9e9>
+  4017ec:	48 89 c3             	mov    rbx,rax
+  4017ef:	48 8d 85 02 fe ff ff 	lea    rax,[rbp-0x1fe]
+  4017f6:	48 89 c7             	mov    rdi,rax
+  4017f9:	e8 22 f4 ff ff       	call   400c20 <_ZNSaIcED1Ev@plt>
+  4017fe:	48 89 d8             	mov    rax,rbx
+  401801:	48 89 c7             	mov    rdi,rax
+  401804:	e8 b7 f4 ff ff       	call   400cc0 <_Unwind_Resume@plt>
+  401809:	48 89 c3             	mov    rbx,rax
+  40180c:	48 8d 85 02 fe ff ff 	lea    rax,[rbp-0x1fe]
+  401813:	48 89 c7             	mov    rdi,rax
+  401816:	e8 05 f4 ff ff       	call   400c20 <_ZNSaIcED1Ev@plt>
+  40181b:	48 89 d8             	mov    rax,rbx
+  40181e:	48 89 c7             	mov    rdi,rax
+  401821:	e8 9a f4 ff ff       	call   400cc0 <_Unwind_Resume@plt>
+  401826:	48 89 c3             	mov    rbx,rax
+  401829:	48 8d 85 60 ff ff ff 	lea    rax,[rbp-0xa0]
+  401830:	48 89 c7             	mov    rdi,rax
+  401833:	e8 b8 f3 ff ff       	call   400bf0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@plt>
+  401838:	eb 03                	jmp    40183d <main+0xa37>
+  40183a:	48 89 c3             	mov    rbx,rax
+  40183d:	48 8d 85 40 ff ff ff 	lea    rax,[rbp-0xc0]
+  401844:	48 89 c7             	mov    rdi,rax
+  401847:	e8 a4 f3 ff ff       	call   400bf0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@plt>
+  40184c:	eb 03                	jmp    401851 <main+0xa4b>
+  40184e:	48 89 c3             	mov    rbx,rax
+  401851:	48 8d 85 20 ff ff ff 	lea    rax,[rbp-0xe0]
+  401858:	48 89 c7             	mov    rdi,rax
+  40185b:	e8 90 f3 ff ff       	call   400bf0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@plt>
+  401860:	eb 03                	jmp    401865 <main+0xa5f>
+  401862:	48 89 c3             	mov    rbx,rax
+  401865:	48 8d 85 00 ff ff ff 	lea    rax,[rbp-0x100]
+  40186c:	48 89 c7             	mov    rdi,rax
+  40186f:	e8 7c f3 ff ff       	call   400bf0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@plt>
+  401874:	eb 03                	jmp    401879 <main+0xa73>
+  401876:	48 89 c3             	mov    rbx,rax
+  401879:	48 8d 85 e0 fe ff ff 	lea    rax,[rbp-0x120]
+  401880:	48 89 c7             	mov    rdi,rax
+  401883:	e8 68 f3 ff ff       	call   400bf0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@plt>
+  401888:	eb 03                	jmp    40188d <main+0xa87>
+  40188a:	48 89 c3             	mov    rbx,rax
+  40188d:	48 8d 85 c0 fe ff ff 	lea    rax,[rbp-0x140]
+  401894:	48 89 c7             	mov    rdi,rax
+  401897:	e8 54 f3 ff ff       	call   400bf0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@plt>
+  40189c:	eb 03                	jmp    4018a1 <main+0xa9b>
+  40189e:	48 89 c3             	mov    rbx,rax
+  4018a1:	48 8d 85 a0 fe ff ff 	lea    rax,[rbp-0x160]
+  4018a8:	48 89 c7             	mov    rdi,rax
+  4018ab:	e8 40 f3 ff ff       	call   400bf0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@plt>
+  4018b0:	eb 03                	jmp    4018b5 <main+0xaaf>
+  4018b2:	48 89 c3             	mov    rbx,rax
+  4018b5:	48 8d 85 80 fe ff ff 	lea    rax,[rbp-0x180]
+  4018bc:	48 89 c7             	mov    rdi,rax
+  4018bf:	e8 2c f3 ff ff       	call   400bf0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@plt>
+  4018c4:	eb 03                	jmp    4018c9 <main+0xac3>
+  4018c6:	48 89 c3             	mov    rbx,rax
+  4018c9:	48 8d 85 60 fe ff ff 	lea    rax,[rbp-0x1a0]
+  4018d0:	48 89 c7             	mov    rdi,rax
+  4018d3:	e8 18 f3 ff ff       	call   400bf0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@plt>
+  4018d8:	eb 03                	jmp    4018dd <main+0xad7>
+  4018da:	48 89 c3             	mov    rbx,rax
+  4018dd:	48 8d 85 40 fe ff ff 	lea    rax,[rbp-0x1c0]
+  4018e4:	48 89 c7             	mov    rdi,rax
+  4018e7:	e8 04 f3 ff ff       	call   400bf0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@plt>
+  4018ec:	eb 28                	jmp    401916 <main+0xb10>
+  4018ee:	48 89 c3             	mov    rbx,rax
+  4018f1:	48 8d 85 02 fe ff ff 	lea    rax,[rbp-0x1fe]
+  4018f8:	48 89 c7             	mov    rdi,rax
+  4018fb:	e8 20 f3 ff ff       	call   400c20 <_ZNSaIcED1Ev@plt>
+  401900:	eb 14                	jmp    401916 <main+0xb10>
+  401902:	48 89 c3             	mov    rbx,rax
+  401905:	48 8d 45 80          	lea    rax,[rbp-0x80]
+  401909:	48 89 c7             	mov    rdi,rax
+  40190c:	e8 df f2 ff ff       	call   400bf0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@plt>
+  401911:	eb 03                	jmp    401916 <main+0xb10>
+  401913:	48 89 c3             	mov    rbx,rax
+  401916:	48 8d 85 20 fe ff ff 	lea    rax,[rbp-0x1e0]
+  40191d:	48 89 c7             	mov    rdi,rax
+  401920:	e8 cb f2 ff ff       	call   400bf0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@plt>
+  401925:	48 89 d8             	mov    rax,rbx
+  401928:	48 89 c7             	mov    rdi,rax
+  40192b:	e8 90 f3 ff ff       	call   400cc0 <_Unwind_Resume@plt>
+  401930:	e8 db f2 ff ff       	call   400c10 <__stack_chk_fail@plt>
+  401935:	48 81 c4 e8 01 00 00 	add    rsp,0x1e8
+  40193c:	5b                   	pop    rbx
+  40193d:	41 5c                	pop    r12
+  40193f:	41 5d                	pop    r13
+  401941:	41 5e                	pop    r14
+  401943:	41 5f                	pop    r15
+  401945:	5d                   	pop    rbp
+  401946:	c3                   	ret    
+
+0000000000401947 <_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EERKS8_S5_>:
+  401947:	55                   	push   rbp
+  401948:	48 89 e5             	mov    rbp,rsp
+  40194b:	53                   	push   rbx
+  40194c:	48 83 ec 38          	sub    rsp,0x38
+  401950:	48 89 7d d8          	mov    QWORD PTR [rbp-0x28],rdi
+  401954:	48 89 75 d0          	mov    QWORD PTR [rbp-0x30],rsi
+  401958:	89 d0                	mov    eax,edx
+  40195a:	88 45 cc             	mov    BYTE PTR [rbp-0x34],al
+  40195d:	64 48 8b 04 25 28 00 	mov    rax,QWORD PTR fs:0x28
+  401964:	00 00 
+  401966:	48 89 45 e8          	mov    QWORD PTR [rbp-0x18],rax
+  40196a:	31 c0                	xor    eax,eax
+  40196c:	48 8b 55 d0          	mov    rdx,QWORD PTR [rbp-0x30]
+  401970:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+  401974:	48 89 d6             	mov    rsi,rdx
+  401977:	48 89 c7             	mov    rdi,rax
+  40197a:	e8 f1 f2 ff ff       	call   400c70 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1ERKS4_@plt>
+  40197f:	0f be 55 cc          	movsx  edx,BYTE PTR [rbp-0x34]
+  401983:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+  401987:	be 01 00 00 00       	mov    esi,0x1
+  40198c:	48 89 c7             	mov    rdi,rax
+  40198f:	e8 6c f2 ff ff       	call   400c00 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6appendEmc@plt>
+  401994:	eb 1a                	jmp    4019b0 <_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EERKS8_S5_+0x69>
+  401996:	48 89 c3             	mov    rbx,rax
+  401999:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+  40199d:	48 89 c7             	mov    rdi,rax
+  4019a0:	e8 4b f2 ff ff       	call   400bf0 <_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev@plt>
+  4019a5:	48 89 d8             	mov    rax,rbx
+  4019a8:	48 89 c7             	mov    rdi,rax
+  4019ab:	e8 10 f3 ff ff       	call   400cc0 <_Unwind_Resume@plt>
+  4019b0:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+  4019b4:	48 8b 4d e8          	mov    rcx,QWORD PTR [rbp-0x18]
+  4019b8:	64 48 33 0c 25 28 00 	xor    rcx,QWORD PTR fs:0x28
+  4019bf:	00 00 
+  4019c1:	74 05                	je     4019c8 <_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EERKS8_S5_+0x81>
+  4019c3:	e8 48 f2 ff ff       	call   400c10 <__stack_chk_fail@plt>
+  4019c8:	48 83 c4 38          	add    rsp,0x38
+  4019cc:	5b                   	pop    rbx
+  4019cd:	5d                   	pop    rbp
+  4019ce:	c3                   	ret    
+  4019cf:	90                   	nop
+
+00000000004019d0 <__libc_csu_init>:
+  4019d0:	41 57                	push   r15
+  4019d2:	41 56                	push   r14
+  4019d4:	41 89 ff             	mov    r15d,edi
+  4019d7:	41 55                	push   r13
+  4019d9:	41 54                	push   r12
+  4019db:	4c 8d 25 0e 04 20 00 	lea    r12,[rip+0x20040e]        # 601df0 <__frame_dummy_init_array_entry>
+  4019e2:	55                   	push   rbp
+  4019e3:	48 8d 2d 0e 04 20 00 	lea    rbp,[rip+0x20040e]        # 601df8 <__init_array_end>
+  4019ea:	53                   	push   rbx
+  4019eb:	49 89 f6             	mov    r14,rsi
+  4019ee:	49 89 d5             	mov    r13,rdx
+  4019f1:	4c 29 e5             	sub    rbp,r12
+  4019f4:	48 83 ec 08          	sub    rsp,0x8
+  4019f8:	48 c1 fd 03          	sar    rbp,0x3
+  4019fc:	e8 87 f1 ff ff       	call   400b88 <_init>
+  401a01:	48 85 ed             	test   rbp,rbp
+  401a04:	74 20                	je     401a26 <__libc_csu_init+0x56>
+  401a06:	31 db                	xor    ebx,ebx
+  401a08:	0f 1f 84 00 00 00 00 	nop    DWORD PTR [rax+rax*1+0x0]
+  401a0f:	00 
+  401a10:	4c 89 ea             	mov    rdx,r13
+  401a13:	4c 89 f6             	mov    rsi,r14
+  401a16:	44 89 ff             	mov    edi,r15d
+  401a19:	41 ff 14 dc          	call   QWORD PTR [r12+rbx*8]
+  401a1d:	48 83 c3 01          	add    rbx,0x1
+  401a21:	48 39 eb             	cmp    rbx,rbp
+  401a24:	75 ea                	jne    401a10 <__libc_csu_init+0x40>
+  401a26:	48 83 c4 08          	add    rsp,0x8
+  401a2a:	5b                   	pop    rbx
+  401a2b:	5d                   	pop    rbp
+  401a2c:	41 5c                	pop    r12
+  401a2e:	41 5d                	pop    r13
+  401a30:	41 5e                	pop    r14
+  401a32:	41 5f                	pop    r15
+  401a34:	c3                   	ret    
+  401a35:	90                   	nop
+  401a36:	66 2e 0f 1f 84 00 00 	nop    WORD PTR cs:[rax+rax*1+0x0]
+  401a3d:	00 00 00 
+
+0000000000401a40 <__libc_csu_fini>:
+  401a40:	f3 c3                	repz ret 
+
+Disassembly of section .fini:
+
+0000000000401a44 <_fini>:
+  401a44:	48 83 ec 08          	sub    rsp,0x8
+  401a48:	48 83 c4 08          	add    rsp,0x8
+  401a4c:	c3                   	ret    
